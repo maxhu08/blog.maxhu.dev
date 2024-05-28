@@ -1,0 +1,12 @@
+baseURL = "https://blog.maxhu.dev/"
+languageCode = "en-us"
+title = "blog.maxhu.dev"
+theme = "hello-friend-ng"
+
+[[menu.main]]
+identifier = "blog"
+name       = "Blog"
+url        = "/posts"
+
+[params.Logo]
+logoText = "Max Hu's Blog"
