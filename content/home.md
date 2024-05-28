@@ -1,3 +1,7 @@
-# home
++++
+title = 'Home'
+date = 2024-05-28T12:15:20-05:00
+draft = false
++++
 
-this is the home.md page
+This is the home page
