@@ -1,7 +1,10 @@
 {{ define "main" }} {{.Content}}
 <ul class="all-posts">
+  <h2>All posts</h2>
   {{range .Site.RegularPages}}
-  <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+  <li>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+  </li>
   {{end}}
 </ul>
 {{ end }}
