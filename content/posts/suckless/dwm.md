@@ -4,6 +4,8 @@ date: 2024-05-28T15:43:56-05:00
 draft: false
 ---
 
+This page is work in progess!
+
 Here is a collection of screenshots from dwm setup:
 
 ![1](/assets/suckless/dwm/1.png)
