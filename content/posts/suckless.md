@@ -33,7 +33,7 @@ configuring dwm so I switched to pure dwm. I cloned a base copy of dwm and
 started patching it. I added important patches like the stacker patch to move
 windows and more. Here's what it ended up looking like:
 
-![dwm1](/assets/suckless/dwm/6.png#center)
+![dwm6](/assets/suckless/dwm/6.png#center)
 
 I learnt a bit about dwm and admired it's simplicity and how it could fit so
 much functionality into so little code. The idea of using SUPER+j & SUPER+k to
@@ -51,9 +51,12 @@ You can find my setup repo and a showcase of it here:
 
 ### chapter 3
 
-After using dwm for a while I started getting into other suckless software.
-After making my dwm config, I started working on my dwmblocks, which allows me
-to put stuff on my bar like the time and more.
+After using dwm for a while I found out that I liked tinkering with my system.
+Because of this, I started getting into other suckless software. After making
+my dwm config, I started working on my dwmblocks setup, which allows me to put
+stuff on my bar such as the time and more.
+
+You can find my build of dwmblocks here: https://github.com/maxhu08/dwmblocks
 
 After that, I started working on st. st was very lacking in features, I even
 had to patch it to add scrollback. I also had to give it patches for ligatures,
@@ -61,10 +64,49 @@ undercurl, and glyph support, which terminal emulators like kitty had out of
 the box. In the end, it still wasn't as good as kitty. It's undercurl looked
 too sharp and when text was undercurled it also had a line underneath which
 looked weird. It also wouldn't render ligatures if the characters were
-different colors.
+different colors. Here's a picture of my build of st with neovim open:
 
 ![st1](/assets/suckless/st/1.png#center)
+
+You can find my build of st here: https://github.com/maxhu08/st
 
 In the end, I switched back to using the kitty terminal emulator even if it
 wasn't as fast as st, but it had a smoother experience and the performance gap
 wasn't too big.
+
+### chapter 4
+
+I then went on to use more suckless programs. I started using slock, a suckless
+lockscreen program which I made activate by pressing a keybind which would lock
+my screen until only unlock it once I had entered my password.
+
+You can find my build of slock here: https://github.com/maxhu08/slock
+
+After that I swapped out dwmblocks for slstatus because slstatus felt easier to
+use. When I was trying to get my battery percentage to display on the bar on my
+thinkpad, dwmblocks kept flashing and it would not work no matter what I did.
+Maybe there was some solution, but it was too confusing and I decided that this
+was not the suckless way. Because of this I tried slstatus which made it a lot
+easier to display the batter percentage since it's built it in. Here's a
+screenshot of my bar with slstatus:
+
+![dwmt1](/assets/suckless/dwm/t1.png#center)
+
+I also found out my thinkpad had two batteries so I displayed the percentage of
+both batteries.
+
+You can find my build of slstatus here: https://github.com/maxhu08/slstatus
+
+### chapter 5
+
+I also made my own dmenu setup. I centered dmenu, gave it a border, and made it
+a grid that had 8 lines and 1 column. This way it looked kind of like a
+suckless veresion of rofi. Here's a showcase of it:
+
+![dmenu1](/assets/suckless/dmenu/1.png#center)
+
+You can find my build of dmenu here: https://github.com/maxhu08/dmenu
+
+### chapter 6
+
+That was a overview of all my experience with suckless programs.
