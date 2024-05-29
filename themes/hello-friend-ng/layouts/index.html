@@ -1,23 +1,31 @@
 {{ define "body" }}
-    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
-{{ end }}
 
-{{ define "main" }}
-    <main aria-role="main">
-        <div>
-            {{ if .Site.Params.Portrait.Path }}
-               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
-            {{ end }}
+<body class="{{ if .Site.Params.backgroundImage }} background-image"
+  style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
+  {{ end }}
+  {{ define "main" }}
+  <main aria-role="main">
+    <div style="display: grid; place-items: center; width: 24rem; padding-top: 4rem;">
+      <!-- {{ if .Site.Params.Portrait.Path }} -->
+      <!--    <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" /> -->
+      <!-- {{ end }} -->
+      <img src="/assets/palm_tree.png" />
+      <h2>{{ .Site.Title }}</h2>
+      <p>This is my blog website. I'm going to write stuff about coding, configuring programs, and other stuff I'm
+        interested in at them moment. This site is not finished and will probably always be a WIP so just wait as I post
+        new stuff here! <br /> <span style="font-weight: bold;">~mh</span>
+      </p>
+      <p>Also see my personal website:
+        <a href="https://maxhu.dev" rel="noreferrer noopener" target="_blank">maxhu.dev
+        </a>
+      </p>
+      <!-- {{ partial "subtitle.html" . }} -->
 
-            <h1>{{ .Site.Title }}</h1>
-
-            {{ partial "subtitle.html" . }}
-
-            {{- with .Site.Params.social }}
-                <div>
-                    {{ partial "social-icons.html" . }}
-                </div>
-            {{- end }}
-        </div>
-    </main>
-{{ end }}
+      <!-- {{- with .Site.Params.social }} -->
+      <!--     <div> -->
+      <!--         {{ partial "social-icons.html" . }} -->
+      <!--     </div> -->
+      <!-- {{- end }} -->
+    </div>
+  </main>
+  {{ end }}
