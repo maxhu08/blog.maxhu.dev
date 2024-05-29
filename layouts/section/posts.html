@@ -1,7 +1,7 @@
 {{ define "main" }} {{.Content}}
 <ul class="all-posts">
   <h2>All posts</h2>
-  {{range .Site.RegularPages}}
+  {{ $sorted := sort .Site.RegularPages "Title" "asc" }} {{range $sorted}}
   <li>
     <a href="{{.Permalink}}">{{.Title}}</a>
   </li>

@@ -8,7 +8,7 @@ This page is dedicated to writing about my experience with suckless software fro
 
 ![suckless](/assets/suckless/suckless-logo.png#center)
 
-### chapter 1
+### intro
 
 I have recently gotten into using suckless software, My first experience with
 suckless was with dwm which is the window manager I settled on when looking for
@@ -26,7 +26,7 @@ Another thing about awesomewm is it uses the lua programming language instead
 of c like dwm, which is supposed to be simpler, but I found it harder to
 configure than dwm.
 
-### chapter 2
+### dwm
 
 I liked awesomewm for the most part, except for configuring it was harder than
 configuring dwm so I switched to pure dwm. I cloned a base copy of dwm and
@@ -49,7 +49,7 @@ You can find my setup repo and a showcase of it here:
 - [dwm-config](https://github.com/maxhu08/dwm)
 - [showcase](https://www.youtube.com/watch?v=irUSgMEb3g8)
 
-### chapter 3
+### dwmblocks
 
 After using dwm for a while I found out that I liked tinkering with my system.
 Because of this, I started getting into other suckless software. After making
@@ -57,6 +57,8 @@ my dwm config, I started working on my dwmblocks setup, which allows me to put
 stuff on my bar such as the time and more.
 
 You can find my build of dwmblocks here: https://github.com/maxhu08/dwmblocks
+
+### st
 
 After that, I started working on st. st was very lacking in features, I even
 had to patch it to add scrollback. I also had to give it patches for ligatures,
@@ -74,13 +76,15 @@ In the end, I switched back to using the kitty terminal emulator even if it
 wasn't as fast as st, but it had a smoother experience and the performance gap
 wasn't too big.
 
-### chapter 4
+### slock
 
 I then went on to use more suckless programs. I started using slock, a suckless
 lockscreen program which I made activate by pressing a keybind which would lock
 my screen until only unlock it once I had entered my password.
 
 You can find my build of slock here: https://github.com/maxhu08/slock
+
+### slstatus
 
 After that I swapped out dwmblocks for slstatus because slstatus felt easier to
 use. When I was trying to get my battery percentage to display on the bar on my
@@ -97,7 +101,7 @@ both batteries.
 
 You can find my build of slstatus here: https://github.com/maxhu08/slstatus
 
-### chapter 5
+### dmenu
 
 I also made my own dmenu setup. I centered dmenu, gave it a border, and made it
 a grid that had 8 lines and 1 column. This way it looked kind of like a
@@ -107,6 +111,6 @@ suckless veresion of rofi. Here's a showcase of it:
 
 You can find my build of dmenu here: https://github.com/maxhu08/dmenu
 
-### chapter 6
+### conclusion
 
 That was a overview of all my experience with suckless programs.
