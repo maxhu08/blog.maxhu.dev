@@ -92,6 +92,11 @@ Here are my different keybinds:
 
 - You can also use `SUPER+Tab` to toggle between two tags kind of like using alt tab in windows.
 
+- I also have it so that I can change focus between monitors by using `SUPER+,`
+  & `SUPER+.` to move up and down the monitor number. I can also use
+  `SUPER+SHIFT+,` & `SUPER+SHIFT+.` to move a window to a different monitor. This
+  is built right into dwm which is very convenient.
+
 - I set it so that `SUPER+ALT` + num keys changes the layout type like
   `SUPER+ALT+1` is tilling mode and `SUPER+ALT+2` is floating. I have layouts
   like centered master, dwindle, spiral, grid and more in case I want to use

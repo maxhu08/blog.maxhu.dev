@@ -35,4 +35,10 @@ my build of the different suckless programs:
   - [more info](/posts/suckless/dmenu)
   - [my build](https://github.com/maxhu08/dmenu)
 
-### intro
+### info
+
+All of the suckless programs can be installed by cloning them and then running
+`sudo make clean install` to install onto your system. You made need some extra
+dependecies sometimes. I wrote a bunch of scripts to install my suckless
+programs really quickly, called "dotman". You can read more about dotman here:
+[PAGE WIP].
