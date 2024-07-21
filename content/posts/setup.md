@@ -51,3 +51,5 @@ https://www.youtube.com/watch?v=Gc_M3JkJK1U
 ![n2](/assets/setup/dwm/n2.png)
 
 ![n3](/assets/setup/dwm/n3.png)
+
+![n4](/assets/setup/dwm/n4.png)
