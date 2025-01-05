@@ -1,9 +1,10 @@
 {
-  "name": "nextjs-contentlayer-blog",
+  "name": "blog.maxhu.dev",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "d": "next dev",
     "dev": "next dev",
     "build": "next build",
     "build:contentlayer": "contentlayer build",
