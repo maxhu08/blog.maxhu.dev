@@ -112,14 +112,12 @@ const Page = ({ params }: { params: { slug: string } }) => {
           "mt-[--_space]",
           "xl:flex xl:flex-row-reverse xl:justify-between",
         )}>
-        {moreThanOneHeading && (
-          <TocDesktop
-            contents={post.headings}
-            className={cn(
-              "hidden sticky top-32 self-start flex-[0_0_25%] xl:block",
-            )}
-          />
-        )}
+        <TocDesktop
+          contents={post.headings}
+          className={cn(
+            "hidden sticky top-32 self-start flex-[0_0_25%] xl:block",
+          )}
+        />
         <ProseLayout
           className={cn(
             "max-xl:mx-auto",

@@ -43,3 +43,11 @@ body {
 .dark .mdx-content h6 {
   color: #ffffff;
 }
+
+.mdx-content strong {
+  color: #6b7280; /* text-zinc-500 */
+}
+
+.dark .mdx-content strong {
+  color: #d4d4d8; /* text-zinc-400 */
+}
