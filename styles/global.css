@@ -1,3 +1,27 @@
 @import "./config.css";
 @import "./tailwind.css";
 @import "./markdown.css";
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #10b981;
+}
+
+::selection {
+  background: #ffffff20 !important;
+  /* color: #fff !important; */
+}

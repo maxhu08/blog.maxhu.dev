@@ -1,7 +1,7 @@
 import config from "@/lib/siteConfig";
 import Link from "@/components/link";
 import { cn } from "@/lib/utils";
-import ThemeProvider from "@/contexts/theme-provider";
+import { ThemeProvider } from "@/contexts/theme-provider";
 import { Separator } from "@/components/separator";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -12,7 +12,11 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <ThemeProvider>
+    <ThemeProvider
+      // attribute="class"
+      defaultTheme="dark"
+      enableSystem
+      disableTransitionOnChange>
       <nav
         className={cn(
           "sticky top-0 z-10 w-full bg-neutral-100 ease-in-out dark:bg-neutral-900",
