@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint && prettier --check .",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write ."
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@next/bundle-analyzer": "^14.2.22",
