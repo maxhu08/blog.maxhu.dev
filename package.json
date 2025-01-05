@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "next lint && prettier --check .",
     "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .next && rm -rf .contentlayer",
     "prettier": "prettier --write ."
   },
   "dependencies": {
