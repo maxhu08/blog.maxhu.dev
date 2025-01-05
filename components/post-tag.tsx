@@ -11,6 +11,7 @@ const tagColors = [
   "dark:text-pink-50 dark:bg-pink-950 text-pink-950 bg-pink-100",
   "dark:text-blue-50 dark:bg-blue-950 text-blue-950 bg-blue-100",
 ];
+
 let currentIdx = 0;
 
 const PostTag = ({ children }: { children: string }) => {
@@ -18,7 +19,7 @@ const PostTag = ({ children }: { children: string }) => {
   currentIdx = currentIdx >= tagColors.length ? 0 : currentIdx;
 
   return (
-    <p className={cn("tag", tagColor)}>
+    <p className={cn("rounded-md py-1 px-2", tagColor)}>
       <span className="align-middle">{children}</span>
     </p>
   );
