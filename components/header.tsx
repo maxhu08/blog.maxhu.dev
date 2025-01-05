@@ -43,10 +43,7 @@ const Header = () => {
             </ul>
           </nav>
         </header>
-        <Separator
-          orientation="horizontal"
-          className={cn("mx-auto transition-all duration-500")}
-        />
+        <Separator orientation="horizontal" />
       </nav>
     </ThemeProvider>
   );

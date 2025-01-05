@@ -63,10 +63,7 @@ const Page = () => {
         <RenderPosts posts={recentBlogs} />
       </BlogPageLayout>
 
-      <Separator
-        orientation="horizontal"
-        className={cn("mx-auto transition-all duration-500 my-8")}
-      />
+      <Separator orientation="horizontal" className="my-8" />
 
       {blogs.length > 0 && (
         <BlogPageLayout title="All Posts Posts">
