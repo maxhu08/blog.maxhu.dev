@@ -1,67 +1,53 @@
 "use client";
 
-import { Moon } from "@/lib/icons";
-import { SunLight } from "iconoir-react";
+import { Moon, Settings, Sun, SunMoon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { cn } from "@/lib/utils";
+import { FC } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
+  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/dropdown-menu";
-import { useEffect, useState } from "react";
 
-const ThemeToggle = () => {
-  const [mounted, setMounted] = useState(false);
-  const { theme, themes, resolvedTheme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+export const ThemeToggle: FC = () => {
+  const { setTheme } = useTheme();
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger
-        aria-label="Theme Toggle"
-        className={cn(
-          "text-sm align-middle p-2 rounded-md",
-          "data-[state=open]:bg-background-secondary hover:bg-background-secondary",
-        )}>
-        {mounted && resolvedTheme === "dark" ? <Moon /> : <SunLight />}
-      </DropdownMenuTrigger>
-      <DropdownMenuContent
-        align="end"
-        sideOffset={10}
-        className={cn(
-          "z-20",
-          "data-[state=open]:animate-slide-up-fade",
-          "data-[state=closed]:animate-slide-down-fade",
-        )}>
-        <DropdownMenuRadioGroup
-          value={theme}
-          onValueChange={setTheme}
-          className={cn(
-            "[&>*]:capitalize",
-            "bg-background-secondary p-1 rounded-md border shadow-md border-borders",
-            "min-w-[120px]",
-          )}>
-          {themes.map((theme) => (
-            <DropdownMenuRadioItem
-              key={theme}
-              value={theme}
-              className={cn(
-                "px-2 py-1 cursor-pointer rounded-md transition-colors",
-                "hover:bg-background-tertiary hover:outline-none",
-              )}>
-              {theme}
-            </DropdownMenuRadioItem>
-          ))}
-        </DropdownMenuRadioGroup>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div>
+      <DropdownMenu modal={false}>
+        <DropdownMenuTrigger asChild>
+          <div className="cursor-pointer text-zinc-500 duration-200 ease-in-out hover:text-black dark:text-zinc-400 dark:hover:text-white">
+            <SunMoon className="h-6 w-6" />
+          </div>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end">
+          <DropdownMenuItem
+            onClick={() => setTheme("light")}
+            className="cursor-pointer">
+            <div className="flex w-full place-items-center gap-2">
+              <span>Light</span>
+              <Sun className="ml-auto h-4 w-4" />
+            </div>
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => setTheme("dark")}
+            className="cursor-pointer">
+            <div className="flex w-full place-items-center gap-2">
+              <span>Dark</span>
+              <Moon className="ml-auto h-4 w-4" />
+            </div>
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => setTheme("system")}
+            className="cursor-pointer">
+            <div className="flex w-full place-items-center gap-2">
+              <span>System</span>
+              <Settings className="ml-auto h-4 w-4" />
+            </div>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
   );
 };
-
-export default ThemeToggle;

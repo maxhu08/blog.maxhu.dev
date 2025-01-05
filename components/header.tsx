@@ -1,8 +1,9 @@
 import config from "@/lib/siteConfig";
 import Link from "@/components/link";
-import ThemeToggle from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import ThemeProvider from "@/contexts/theme-provider";
+import { Separator } from "@/components/separator";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { text: "Home", href: "/" },
@@ -12,9 +13,9 @@ const navLinks = [
 const Header = () => {
   return (
     <ThemeProvider>
-      <div
+      <nav
         className={cn(
-          "sticky top-0 z-10 backdrop-blur-[10px] bg-background/80 shadow-sm",
+          "sticky top-0 z-10 w-full bg-neutral-100 ease-in-out dark:bg-neutral-900",
           "transition-colors",
         )}>
         <header className={cn("max-w-container-center flex items-center py-4")}>
@@ -38,7 +39,11 @@ const Header = () => {
             </ul>
           </nav>
         </header>
-      </div>
+        <Separator
+          orientation="horizontal"
+          className={cn("mx-auto transition-all duration-500")}
+        />
+      </nav>
     </ThemeProvider>
   );
 };

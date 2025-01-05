@@ -58,7 +58,7 @@ export default function RootLayout({
       <body
         className={cn(
           fontSans.variable,
-          "text-foreground-primary bg-background min-h-screen font-sans",
+          "text-foreground-primary bg-white-200 dark:bg-neutral-900 min-h-screen font-sans",
           "selection:bg-accent selection:text-white",
         )}>
         <Header />
