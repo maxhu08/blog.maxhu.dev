@@ -29,7 +29,7 @@ export const TocMobile = ({ contents, className }: TocProps) => {
             "py-2 pr-[0.5em] pl-[1em] rounded-global font-medium",
             "[&>svg]:data-[state=open]:rotate-90 [&>svg]:text-xs",
           )}>
-          <span>On this page</span>
+          <span className="text-black dark:text-white">On this page</span>
           <NavArrowRight />
         </DropdownMenuTrigger>
         <DropdownMenuContent
@@ -103,7 +103,9 @@ const TocDesktop = ({ contents, className }: TocProps) => {
   return (
     <div className={className}>
       <nav className="pl-8">
-        <p className="text-xl pb-4 font-medium">On this page</p>
+        <p className="text-black dark:text-white text-xl pb-4 font-medium">
+          On this page
+        </p>
         <ul className={cn("max-lg:shadow-md bg-transparent p-0")}>
           {contents.map((e) => {
             if (e.depth > 2) return;

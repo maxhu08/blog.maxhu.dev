@@ -70,7 +70,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
         <ProseLayout>
           <div
             className={cn(
-              "not-prose text-foreground-secondary text-sm font-medium",
+              "not-prose text-zinc-500 dark:text-zinc-400 text-sm font-medium",
               "flex gap-6 flex-wrap mb-6 lg:mb-10",
               "[&_svg]:text-xs [&>*]:flex [&>*]:gap-2",
             )}>
@@ -79,8 +79,12 @@ const Page = ({ params }: { params: { slug: string } }) => {
               {formatDate(post.date, "full")}
             </time>
           </div>
-          <h1 className="md:leading-tight">{post.title}</h1>
-          <p className="mt-0 lg:mt-0">{post.description}</p>
+          <h1 className="md:leading-tight text-black dark:text-white">
+            {post.title}
+          </h1>
+          <p className="mt-0 text-zinc-500 dark:text-zinc-400 lg:mt-0">
+            {post.description}
+          </p>
           {isArrayNotEmpty(post.tags) && (
             <div className={cn("flex gap-2 flex-wrap not-prose")}>
               {post.tags.map((tag) => (

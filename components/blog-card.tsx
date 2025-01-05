@@ -46,7 +46,7 @@ const BlogCard = ({
           )}>
           <Link href={href}>{title}</Link>
         </h3>
-        <p className={cn("text-zinc-500 dark:text-zinc-400")}>{desc}</p>
+        <p className="text-zinc-500 dark:text-zinc-400">{desc}</p>
         {isArrayNotEmpty(tags) && (
           <div className={cn("mt-4 flex gap-2 flex-wrap")}>
             {tags.map((tag) => (
