@@ -25,3 +25,21 @@ body {
   background: #ffffff20 !important;
   /* color: #fff !important; */
 }
+
+.mdx-content h1,
+.mdx-content h2,
+.mdx-content h3,
+.mdx-content h4,
+.mdx-content h5,
+.mdx-content h6 {
+  color: #000000;
+}
+
+.dark .mdx-content h1,
+.dark .mdx-content h2,
+.dark .mdx-content h3,
+.dark .mdx-content h4,
+.dark .mdx-content h5,
+.dark .mdx-content h6 {
+  color: #ffffff;
+}

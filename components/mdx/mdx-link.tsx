@@ -12,7 +12,13 @@ const MarkdownLink = ({
       ? "_blank"
       : target;
   return (
-    <Link showIcon={true} href={href} target={linkTarget} {...restProps} />
+    <Link
+      showIcon={true}
+      href={href}
+      target={linkTarget}
+      {...restProps}
+      className="text-blue-500 hover:text-blue-600 transition duration-[250ms] ease-in-out cursor-pointer"
+    />
   );
 };
 

@@ -7,7 +7,11 @@ type MDXContentProps = {
 
 const MDXContent = ({ code }: MDXContentProps) => {
   const Content = useMDXComponent(code);
-  return <Content components={mdxComponents} />;
+  return (
+    <div className="mdx-content text-zinc-500 dark:text-zinc-400">
+      <Content components={mdxComponents} />
+    </div>
+  );
 };
 
 export default MDXContent;
