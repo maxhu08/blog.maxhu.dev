@@ -19,7 +19,11 @@ const Header = () => {
           "transition-colors",
         )}>
         <header className={cn("max-w-container-center flex items-center py-4")}>
-          <Link href="/" className={cn("text-lg font-bold mr-auto lg:text-xl")}>
+          <Link
+            href="/"
+            className={cn(
+              "text-lg font-bold mr-auto lg:text-xl text-black dark:text-white",
+            )}>
             {config.title}
           </Link>
           <nav>
@@ -28,7 +32,7 @@ const Header = () => {
                 <li key={link.text}>
                   <Link
                     href={link.href}
-                    className="lg:text-lg lg:font-medium hover:text-accent">
+                    className="lg:text-lg lg:font-medium text-black dark:text-white">
                     {link.text}
                   </Link>
                 </li>
