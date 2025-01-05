@@ -9,7 +9,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: config.title,
+    default: "blog",
     template: `%s | ${config.title}`,
   },
   description: config.description,

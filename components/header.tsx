@@ -1,4 +1,3 @@
-import config from "@/lib/siteConfig";
 import Link from "@/components/link";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/separator";
@@ -20,10 +19,10 @@ const Header = () => {
         <Link href="/">
           <div className="grid grid-cols-[max-content_auto] place-items-center gap-1">
             <div className="w-8 h-8">
-              <img src="/icon.png" alt="icon" />
+              <img src="/assets/mh.png" alt="icon" />
             </div>
             <span className="text-lg font-bold mr-auto lg:text-xl text-black dark:text-white">
-              {config.title}
+              blog
             </span>
           </div>
         </Link>
