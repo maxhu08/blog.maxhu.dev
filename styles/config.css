@@ -7,10 +7,10 @@
 /* Colors */
 :root {
   /* light mode colors */
-  --color-accent: 26 90% 37%; /* hsl */
-  --color-background-primary: 60 9% 98%;
-  --color-background-secondary: 60 5% 96%;
-  --color-background-tertiary: 20 6% 90%;
+  --color-accent: 174 75% 40%; /* teal-500 */
+  --color-background-primary: 0 0% 93%; /* neutral-100 */
+  --color-background-secondary: 0 0% 87%; /* neutral-200 */
+  --color-background-tertiary: 0 0% 75%; /* neutral-300 */
   --color-text-primary: theme(colors.stone.950);
   --color-text-secondary: theme(colors.stone.600);
   --color-text-tertiary: theme(colors.stone.500);
@@ -49,10 +49,10 @@
 
 :root[data-theme="dark"] {
   /* dark mode colors */
-  --color-accent: 38 92% 50%; /* hsl */
-  --color-background-primary: 20 14% 4%;
-  --color-background-secondary: 24 10% 10%;
-  --color-background-tertiary: 12 6% 15%;
+  --color-accent: 174 75% 40%; /* teal-500 */
+  --color-background-primary: 0 0% 21%; /* neutral-800 */
+  --color-background-secondary: 0 0% 16%; /* neutral-900 */
+  --color-background-tertiary: 0 0% 12%; /* neutral-950 */
   --color-text-primary: theme(colors.stone.50);
   --color-text-secondary: theme(colors.stone.400);
   --color-text-tertiary: theme(colors.stone.600);
@@ -85,6 +85,6 @@
   --color-pre-code-title-bg: var(--color-th-bg);
   --color-pre-code-title-fg: theme(colors.stone.200);
   --color-pre-code-highlighted-chars: theme(colors.stone.500/50%);
-  --color-pre-code-line-highlight: theme(colors.amber.500/10%);
-  --color-pre-code-line-highlight-border: theme(colors.amber.600/50%);
+  --color-pre-code-line-highlight: theme(colors.teal.500/10%);
+  --color-pre-code-line-highlight-border: theme(colors.teal.600/50%);
 }
