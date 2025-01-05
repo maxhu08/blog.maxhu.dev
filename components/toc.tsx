@@ -114,10 +114,10 @@ const TocDesktop = ({ contents, className }: TocProps) => {
                 <Link
                   href={`#${e.slug}`}
                   className={cn(
-                    "block p-2 text-[--color-body] hover:text-accent px-4 py-2",
+                    "block p-2  text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white px-4 py-2",
                     "border-l-2 border-l-borders",
                     "[&.active]:border-l-black [&.active]:!text-black",
-                    "dark:[&.active]:border-l-white [&.active]:!text-white",
+                    "dark:[&.active]:border-l-white dark:[&.active]:!text-white",
                     hash === e.slug && "active",
                   )}>
                   {e.text}
