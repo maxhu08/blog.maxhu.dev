@@ -36,16 +36,17 @@ const BlogCard = ({
         />
       )}
       <div>
-        <p className={cn("text-accent text-sm font-medium mb-4")}>
+        <p
+          className={cn("text-black dark:text-white text-sm font-medium mb-4")}>
           {formatDate(date)}
         </p>
         <h3
           className={cn(
-            "font-medium text-xl md:text-2xl mb-2 hover:underline",
+            "font-medium text-xl md:text-2xl mb-2 hover:underline text-black dark:text-white",
           )}>
           <Link href={href}>{title}</Link>
         </h3>
-        <p className={cn("text-foreground-secondary")}>{desc}</p>
+        <p className={cn("text-zinc-500 dark:text-zinc-400")}>{desc}</p>
         {isArrayNotEmpty(tags) && (
           <div className={cn("mt-4 flex gap-2 flex-wrap")}>
             {tags.map((tag) => (

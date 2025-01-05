@@ -3,6 +3,7 @@ import BlogPageLayout from "@/components/layout/blog-page-layout";
 import Link from "@/components/link";
 import PostPaginator from "@/components/post-paginator";
 import RenderPosts from "@/components/render-posts";
+import { Separator } from "@/components/separator";
 import { allSortedBlogs } from "@/lib/contentlayer";
 import config from "@/lib/siteConfig";
 import { cn, generateCommonMeta } from "@/lib/utils";
@@ -62,7 +63,10 @@ const Page = () => {
         <RenderPosts posts={recentBlogs} />
       </BlogPageLayout>
 
-      <hr className="border-borders my-8 lg:my-12" />
+      <Separator
+        orientation="horizontal"
+        className={cn("mx-auto transition-all duration-500 my-8")}
+      />
 
       {blogs.length > 0 && (
         <BlogPageLayout title="All Posts Posts">
