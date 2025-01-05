@@ -116,7 +116,8 @@ const TocDesktop = ({ contents, className }: TocProps) => {
                   className={cn(
                     "block p-2 text-[--color-body] hover:text-accent px-4 py-2",
                     "border-l-2 border-l-borders",
-                    "[&.active]:border-l-accent [&.active]:text-accent",
+                    "[&.active]:border-l-black [&.active]:!text-black",
+                    "dark:[&.active]:border-l-white [&.active]:!text-white",
                     hash === e.slug && "active",
                   )}>
                   {e.text}

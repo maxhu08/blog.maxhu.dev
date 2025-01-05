@@ -53,7 +53,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
       <Link
         href="/blog"
         className={cn(
-          "inline-flex gap-1 items-center text-accent text-sm",
+          "inline-flex gap-1 items-center text-zinc-500 dark:text-zinc-400 text-sm",
           "-ml-1 mb-[--_space] font-medium",
           "hover:text-accent hover:no-underline",
           "lg:text-base lg:leading-none",
