@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { ThemeProvider } from "@/contexts/theme-provider";
 import { fontSans } from "@/lib/fonts";
 import config from "@/lib/siteConfig";
 import { cn } from "@/lib/utils";
@@ -58,12 +59,18 @@ export default function RootLayout({
       <body
         className={cn(
           fontSans.variable,
-          "text-foreground-primary bg-white-200 dark:bg-neutral-900 min-h-screen font-sans",
-          "selection:bg-accent selection:text-white",
-        )}>
-        <Header />
-        {children}
-        <Footer />
+          "bg-white-200 dark:bg-neutral-900 min-h-screen font-sans",
+        )}
+        dir="ltr">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
